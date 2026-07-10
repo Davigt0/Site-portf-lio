@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Davi Gonçalves, desenvolvedor front-end e UI designer."
+    />
+    <title>Davi Gonçalves | Front-end Developer & UI Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <nav id="navbar" aria-label="Navegação principal">
+      <a href="#" class="nav-logo" aria-label="Voltar ao início">
+        <span>DV</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato" class="nav-cta">Contato</a></li>
+      </ul>
+      <button
+        class="nav-menu-btn"
+        id="menuBtn"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        ☰
+      </button>
+    </nav>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-bg" aria-hidden="true">
+          <span class="particle particle-a"></span>
+          <span class="particle particle-b"></span>
+          <span class="particle particle-c"></span>
+          <span class="grid-orbit"></span>
+        </div>
+
+        <div class="hero-text reveal reveal-left">
+          <div class="hero-eyebrow">
+            <span></span>
+            Disponível para projetos digitais
+          </div>
+          <h1>Interfaces que parecem simples, mas trabalham em alto nível.</h1>
+          <p class="hero-desc">
+            Sou Davi Gonçalves, desenvolvedor front-end e UI designer. Crio
+            experiências rápidas, responsivas e visualmente marcantes para
+            marcas que querem presença digital com precisão.
+          </p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="#contato" class="btn btn-ghost">Começar conversa</a>
+          </div>
+          <div class="hero-indicators" aria-label="Indicadores profissionais">
+            <div>
+              <strong data-count="2">0</strong>
+              <span>Anos criando</span>
+            </div>
+            <div>
+              <strong data-count="20">0</strong>
+              <span>Projetos</span>
+            </div>
+            <div>
+              <strong data-count="15">0</strong>
+              <span>Clientes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-right">
+          <div class="portrait-shell tilt-card parallax-item" data-depth="0.08">
+            <div class="portrait-glow"></div>
+            <img
+              src="/imagens/foto profissional minha.png"
+              class="hero-photo"
+            />
+            <div class="availability-pill">
+              <span></span>
+              Open to work
+            </div>
+            <div class="floating-card floating-card-top">
+              <small>Stack atual</small>
+              <strong>HTML · CSS · JS · React</strong>
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <small>Foco</small>
+              <strong>UX, performance e motion</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee-section" aria-hidden="true">
+        <div class="marquee-track">
+          <span>HTML</span><i></i><span>JavaScript</span><i></i> <span>CSS</span
+          ><i></i><span>React</span><i></i> <span>UI Design</span><i></i
+          ><span>Performance</span><i></i> <span>HTML</span><i></i
+          ><span>JavaScript</span><i></i> <span>CSS</span><i></i
+          ><span>React</span><i></i> <span>UI Design</span><i></i
+          ><span>Performance</span><i></i>
+        </div>
+      </div>
+
+      <section class="section" id="habilidades">
+        <div class="section-heading reveal">
+          <p class="section-label">O que eu faço</p>
+          <h2>Skills para transformar ideia em interface real.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal" data-delay="0">
+            <div class="skill-top">
+              <span class="skill-icon">FE</span>
+              <strong>92%</strong>
+            </div>
+            <h3>Front-end</h3>
+            <p>
+              HTML, CSS, JavaScript moderno e React com foco em estrutura,
+              acessibilidade e código limpo.
+            </p>
+            <div class="skill-bar" data-level="92"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-delay="80">
+            <div class="skill-top">
+              <span class="skill-icon">UI</span>
+              <strong>88%</strong>
+            </div>
+            <h3>UI Design</h3>
+            <p>
+              Interfaces elegantes, sistemas visuais consistentes, protótipos e
+              experiência orientada ao usuário.
+            </p>
+            <div class="skill-bar" data-level="88"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-delay="160">
+            <div class="skill-top">
+              <span class="skill-icon">RS</span>
+              <strong>94%</strong>
+            </div>
+            <h3>Responsivo</h3>
+            <p>
+              Layouts fluidos para desktop, notebook, tablet e celular sem
+              sacrificar hierarquia visual.
+            </p>
+            <div class="skill-bar" data-level="94"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-delay="240">
+            <div class="skill-top">
+              <span class="skill-icon">API</span>
+              <strong>82%</strong>
+            </div>
+            <h3>Integrações</h3>
+            <p>
+              Consumo de APIs REST, autenticação, formulários inteligentes e
+              serviços externos.
+            </p>
+            <div class="skill-bar" data-level="82"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-delay="320">
+            <div class="skill-top">
+              <span class="skill-icon">CI</span>
+              <strong>78%</strong>
+            </div>
+            <h3>Deploy & CI/CD</h3>
+            <p>
+              Publicação com Vercel, Netlify e fluxos de entrega contínua para
+              colocar produto no ar.
+            </p>
+            <div class="skill-bar" data-level="78"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-delay="400">
+            <div class="skill-top">
+              <span class="skill-icon">CWV</span>
+              <strong>90%</strong>
+            </div>
+            <h3>Performance</h3>
+            <p>
+              Otimização de carregamento, imagens, cache e Core Web Vitals para
+              experiências mais rápidas.
+            </p>
+            <div class="skill-bar" data-level="90"><span></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projetos">
+        <div class="section-heading reveal">
+          <p class="section-label">Trabalhos selecionados</p>
+          <h2>Showcase com profundidade, movimento e propósito.</h2>
+        </div>
+        <div class="projects-grid">
+          <a
+            href="/Site para academia/academia_public/index.html"
+            target="_blank"
+            class="project-card tilt-card reveal"
+            data-delay="0"
+          >
+            <div class="project-thumb">
+              <span>Gym.</span>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HMTL</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <h3>Academia premium</h3>
+              <p>
+                Site institucional para academia de design chamativo com
+                animações de entrada, visual editorial e tema flexível.
+              </p>
+              <span class="project-arrow">Ver projeto</span>
+            </div>
+          </a>
+          <a
+            href="https://pjt-construcoes.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card tilt-card reveal featured-project"
+            data-delay="120"
+          >
+            <div class="project-thumb">
+              <span>PJT.</span>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>Landing Page</span>
+                <span>Vercel</span>
+              </div>
+              <h3>PJT Construções</h3>
+              <p>
+                Experiência institucional para construção civil com hierarquia
+                clara, CTA direto e navegação objetiva.
+              </p>
+              <span class="project-arrow">Ver projeto</span>
+            </div>
+          </a>
+          <a
+            href="/shop/index.html"
+            class="project-card tilt-card reveal"
+            target="_blank"
+            data-delay="240"
+          >
+            <div class="project-thumb">
+              <span>Shop.</span>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>React</span>
+              </div>
+              <h3>Loja Artesanal</h3>
+              <p>
+                E-commerce simples para portfólio, com sistema de carrinho e
+                outros.
+              </p>
+              <span class="project-arrow">Ver projeto</span>
+            </div>
+          </a>
+          <a
+            href="/site imobiliária/imobiliária/index.html"
+            class="project-card tilt-card reveal"
+            data-delay="360"
+            target="_blank"
+          >
+            <div class="project-thumb">
+              <span
+                >Real <br />
+                Estate.</span
+              >
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HMLT</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <h3>Imobiliária premium</h3>
+              <p>
+                Imobiliária premium, com design moderno, responsividade,
+                animações, dentre outros.
+              </p>
+              <span class="project-arrow">Ver projeto</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section about-section" id="sobre">
+        <div class="about-grid">
+          <div class="about-media reveal reveal-left">
+            <div class="about-photo-wrap parallax-item" data-depth="-0.05">
+              <img
+                src="imagens/ChatGPT Image 9 de jul. de 2026, 17_54_10.png"
+                alt="Davi Gonçalves em retrato profissional"
+                class="about-photo"
+              />
+            </div>
+          </div>
+          <div class="about-text reveal reveal-right">
+            <p class="section-label">Quem sou eu</p>
+            <h2>Construo há 1 ano, aprendendo e refinando sempre.</h2>
+            <p>
+              Comecei com HTML e CSS por curiosidade. Logo me apaixonei pela
+              mistura de lógica e estética que o front-end oferece: código que
+              vira algo que as pessoas tocam, leem e usam no dia a dia.
+            </p>
+            <p>
+              Hoje me especializo em interfaces rápidas e acessíveis, com
+              atenção especial à experiência do usuário, microinterações e
+              consistência visual.
+            </p>
+            <div class="about-stats">
+              <div>
+                <strong data-count="2">0</strong>
+                <span>Anos de experiência</span>
+              </div>
+              <div>
+                <strong data-count="20">0</strong>
+                <span>Projetos entregues</span>
+              </div>
+              <div>
+                <strong data-count="15">0</strong>
+                <span>Clientes satisfeitos</span>
+              </div>
+            </div>
+            <ul class="about-list">
+              <li>Foco em acessibilidade e clareza visual</li>
+              <li>Design orientado ao usuário e ao negócio</li>
+              <li>Código modular, limpo e fácil de evoluir</li>
+              <li>Entrega com atenção a prazo e acabamento</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="timeline-wrap reveal">
+          <div class="timeline-item">
+            <span class="timeline-year">2026</span>
+            <div class="timeline-content">
+              <h4>Freelancer full-time</h4>
+              <p>Projetos para marcas, negócios locais e experiências web.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2024</span>
+            <div class="timeline-content">
+              <h4>Dev Front-end Jr. · Agência X</h4>
+              <p>
+                Landing pages, portais institucionais e interfaces responsivas.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2023</span>
+            <div class="timeline-content">
+              <h4>Primeiros projetos open source</h4>
+              <p>
+                Contribuições no GitHub e primeiros clientes via comunidade.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2022</span>
+            <div class="timeline-content">
+              <h4>Início na programação</h4>
+              <p>Primeiro “Olá, Mundo!” e a descoberta do front-end.</p>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="contact-section" id="contato">
+        <div class="contact-inner reveal">
+          <div class="contact-copy">
+            <p class="section-label">Vamos conversar</p>
+            <h2>Tem um projeto em mente?</h2>
+            <p>
+              Estou disponível para freelas, projetos de médio e longo prazo e
+              parcerias. Me conta o que você precisa e eu retorno com uma
+              direção clara.
+            </p>
+            <div class="contact-actions">
+              <a
+                href="https://mailto:gtdavi239@gmail.com"
+                class="btn btn-primary"
+                target="_blank"
+              >
+                gtdavi239@gmail.com
+              </a>
+              <!-- <a
+                href="https://linkedin.com"
+                class="btn btn-outline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a> -->
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/xzdloryr"
+          >
+            <label>
+              <span>Nome</span>
+              <input type="text" name="name" placeholder="Seu nome" required />
+            </label>
+            <label>
+              <span>E-mail</span>
+              <input
+                type="email"
+                name="email"
+                placeholder="voce@email.com"
+                required
+              />
+            </label>
+            <label>
+              <span>Mensagem</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Conte um pouco sobre o projeto"
+                required
+              ></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">
+              Enviar mensagem
+            </button>
+            <p class="form-feedback" id="formFeedback" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#" class="footer-logo">DV</a>
+      <p>
+        © 2026 Davi Gonçalves. Feito com HTML, CSS, JavaScript e cuidado visual.
+      </p>
+      <ul class="footer-links">
+        <!-- <li>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li> -->
+        <li>
+          <a
+            href="https://wa.me/5521997972347"
+            target="_blank"
+            rel="noopener noreferrer"
+            >whatsapp</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://mailto: gtdavi239@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >e-mail</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

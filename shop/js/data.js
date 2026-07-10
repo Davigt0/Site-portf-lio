@@ -1,0 +1,222 @@
+// Base de dados dos produtos — mock local (substituir por API/backend futuramente)
+const PRODUCTS = [
+  {
+    id: 1,
+    tipo: "casaco",
+    nome: "Casaco Alfaiataria Ink",
+    categoria: "masculino",
+    cor: "preto",
+    corHex: "#16140F",
+    preco: 489.90,
+    precoPromo: null,
+    tecido: "Lã 70% / Poliéster 30%",
+    tamanhos: ["P", "M", "G", "GG"],
+    descricao: "Casaco de corte reto em lã, forro interno acetinado e botões em madrepérola. Peça-chave para composições de inverno estruturadas.",
+    avaliacao: 4.8,
+    numAvaliacoes: 32,
+    novo: true,
+    maisVendido: true
+  },
+  {
+    id: 2,
+    tipo: "camisa",
+    nome: "Camisa Linho Paper",
+    categoria: "masculino",
+    cor: "bege",
+    corHex: "#E8DFC9",
+    preco: 219.90,
+    precoPromo: 179.90,
+    tecido: "Linho 100%",
+    tamanhos: ["P", "M", "G"],
+    descricao: "Camisa em linho puro com caimento solto e mangas dobráveis. Respirável, leve, feita para dias longos.",
+    avaliacao: 4.5,
+    numAvaliacoes: 18,
+    novo: false,
+    maisVendido: true
+  },
+  {
+    id: 3,
+    tipo: "vestido",
+    nome: "Vestido Corte Emerald",
+    categoria: "feminino",
+    cor: "verde",
+    corHex: "#2F4B3C",
+    preco: 349.90,
+    precoPromo: null,
+    tecido: "Viscose 95% / Elastano 5%",
+    tamanhos: ["PP", "P", "M", "G"],
+    descricao: "Vestido midi com caimento fluido e fenda lateral discreta. Modelagem que acompanha o corpo sem marcar.",
+    avaliacao: 4.9,
+    numAvaliacoes: 51,
+    novo: true,
+    maisVendido: true
+  },
+  {
+    id: 4,
+    tipo: "calca",
+    nome: "Calça Alfaiataria Reta",
+    categoria: "feminino",
+    cor: "preto",
+    corHex: "#16140F",
+    preco: 299.90,
+    precoPromo: null,
+    tecido: "Poliéster 65% / Viscose 35%",
+    tamanhos: ["36", "38", "40", "42"],
+    descricao: "Calça de cintura alta com pence frontal e caimento reto. Base essencial para qualquer guarda-roupa.",
+    avaliacao: 4.6,
+    numAvaliacoes: 27,
+    novo: false,
+    maisVendido: false
+  },
+  {
+    id: 5,
+    tipo: "casaco",
+    nome: "Trench Coat Clay",
+    categoria: "feminino",
+    cor: "terracota",
+    corHex: "#A8402E",
+    preco: 599.90,
+    precoPromo: 479.90,
+    tecido: "Algodão 80% / Poliéster 20%",
+    tamanhos: ["P", "M", "G"],
+    descricao: "Trench coat em gabardine com cinto amarrável e forro xadrez interno. Peça de transição para as estações.",
+    avaliacao: 4.7,
+    numAvaliacoes: 14,
+    novo: true,
+    maisVendido: false
+  },
+  {
+    id: 6,
+    tipo: "camisa",
+    nome: "Camiseta Base Bone",
+    categoria: "masculino",
+    cor: "bege",
+    corHex: "#E8DFC9",
+    preco: 89.90,
+    precoPromo: null,
+    tecido: "Algodão Pima 100%",
+    tamanhos: ["P", "M", "G", "GG"],
+    descricao: "Camiseta em algodão pima de gramatura alta. Corte levemente boxy, gola careca reforçada.",
+    avaliacao: 4.4,
+    numAvaliacoes: 63,
+    novo: false,
+    maisVendido: true
+  },
+  {
+    id: 7,
+    tipo: "saia",
+    nome: "Saia Plissada Verde",
+    categoria: "feminino",
+    cor: "verde",
+    corHex: "#2F4B3C",
+    preco: 189.90,
+    precoPromo: null,
+    tecido: "Poliéster Plissado 100%",
+    tamanhos: ["PP", "P", "M"],
+    descricao: "Saia midi plissada com cintura elástica. Movimento fluido a cada passo, sem perder estrutura.",
+    avaliacao: 4.3,
+    numAvaliacoes: 9,
+    novo: true,
+    maisVendido: false
+  },
+  {
+    id: 8,
+    tipo: "blazer",
+    nome: "Blazer Estruturado Ink",
+    categoria: "masculino",
+    cor: "preto",
+    corHex: "#16140F",
+    preco: 459.90,
+    precoPromo: 399.90,
+    tecido: "Lã 60% / Poliéster 40%",
+    tamanhos: ["P", "M", "G", "GG"],
+    descricao: "Blazer de ombro estruturado e lapela em pico. Corte contemporâneo pensado para uso diário, não só cerimônia.",
+    avaliacao: 4.7,
+    numAvaliacoes: 21,
+    novo: false,
+    maisVendido: false
+  },
+  {
+    id: 9,
+    tipo: "vestido",
+    nome: "Vestido Slip Bone",
+    categoria: "feminino",
+    cor: "bege",
+    corHex: "#E8DFC9",
+    preco: 259.90,
+    precoPromo: null,
+    tecido: "Cetim de Viscose 100%",
+    tamanhos: ["PP", "P", "M", "G"],
+    descricao: "Vestido slip em cetim fluido, alças reguláveis. Peça coringa entre o casual e o noite.",
+    avaliacao: 4.6,
+    numAvaliacoes: 38,
+    novo: true,
+    maisVendido: false
+  },
+  {
+    id: 10,
+    tipo: "bermuda",
+    nome: "Bermuda Alfaiataria",
+    categoria: "masculino",
+    cor: "bege",
+    corHex: "#E8DFC9",
+    preco: 169.90,
+    precoPromo: null,
+    tecido: "Linho 55% / Algodão 45%",
+    tamanhos: ["P", "M", "G", "GG"],
+    descricao: "Bermuda de alfaiataria com pences e caimento reto até o joelho. Formal o suficiente, leve o bastante.",
+    avaliacao: 4.2,
+    numAvaliacoes: 11,
+    novo: false,
+    maisVendido: false
+  },
+  {
+    id: 11,
+    tipo: "cardiga",
+    nome: "Cardigã Trançado Terracota",
+    categoria: "feminino",
+    cor: "terracota",
+    corHex: "#A8402E",
+    preco: 279.90,
+    precoPromo: 229.90,
+    tecido: "Lã Merino 100%",
+    tamanhos: ["P", "M", "G"],
+    descricao: "Cardigã em tricô trançado com botões de madeira. Aquece sem pesar, veste bem por cima de qualquer base.",
+    avaliacao: 4.8,
+    numAvaliacoes: 17,
+    novo: true,
+    maisVendido: true
+  },
+  {
+    id: 12,
+    tipo: "calca",
+    nome: "Calça Cargo Verde",
+    categoria: "masculino",
+    cor: "verde",
+    corHex: "#2F4B3C",
+    preco: 239.90,
+    precoPromo: null,
+    tecido: "Sarja de Algodão 100%",
+    tamanhos: ["38", "40", "42", "44"],
+    descricao: "Calça cargo com bolsos utilitários e cadarço de ajuste na barra. Resistente para o dia a dia.",
+    avaliacao: 4.5,
+    numAvaliacoes: 24,
+    novo: false,
+    maisVendido: false
+  }
+];
+
+// Helpers de acesso a dados
+function getProdutoPorId(id) {
+  return PRODUCTS.find(p => p.id === Number(id));
+}
+
+function getProdutosRelacionados(produto, limite = 4) {
+  return PRODUCTS
+    .filter(p => p.id !== produto.id && p.categoria === produto.categoria)
+    .slice(0, limite);
+}
+
+function formatarPreco(valor) {
+  return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+}

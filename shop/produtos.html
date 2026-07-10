@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo — OSSO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/produtos.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">OSSO</a>
+    <ul class="nav-links">
+      <li><a href="produtos.html">Catálogo</a></li>
+      <li><a href="produtos.html?categoria=masculino">Masculino</a></li>
+      <li><a href="produtos.html?categoria=feminino">Feminino</a></li>
+      <li><a href="produtos.html?promo=1">Promoções</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-icon-btn" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button id="btn-abrir-carrinho" class="nav-icon-btn" aria-label="Carrinho">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M6 7h15l-1.5 10.5a2 2 0 0 1-2 1.5H8.5a2 2 0 0 1-2-1.5L5 4H2"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span id="carrinho-contador" class="cart-badge">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="catalogo-header container">
+  <p class="eyebrow">Catálogo completo</p>
+  <h1 id="titulo-catalogo">Todas as peças</h1>
+</header>
+
+<div class="catalogo-layout container">
+  <aside class="filtros">
+    <div class="filtro-grupo">
+      <h4>Categoria</h4>
+      <label><input type="checkbox" name="categoria" value="masculino"> Masculino</label>
+      <label><input type="checkbox" name="categoria" value="feminino"> Feminino</label>
+    </div>
+
+    <div class="filtro-grupo">
+      <h4>Cor</h4>
+      <label><input type="checkbox" name="cor" value="preto"> Preto</label>
+      <label><input type="checkbox" name="cor" value="bege"> Bege</label>
+      <label><input type="checkbox" name="cor" value="verde"> Verde</label>
+      <label><input type="checkbox" name="cor" value="terracota"> Terracota</label>
+    </div>
+
+    <div class="filtro-grupo">
+      <h4>Preço</h4>
+      <label><input type="radio" name="preco" value="all" checked> Todos</label>
+      <label><input type="radio" name="preco" value="0-150"> Até R$ 150</label>
+      <label><input type="radio" name="preco" value="150-350"> R$ 150 – R$ 350</label>
+      <label><input type="radio" name="preco" value="350-9999"> Acima de R$ 350</label>
+    </div>
+
+    <div class="filtro-grupo">
+      <h4>Outros</h4>
+      <label><input type="checkbox" id="filtro-promo"> Somente promoções</label>
+      <label><input type="checkbox" id="filtro-novo"> Somente lançamentos</label>
+    </div>
+
+    <button id="btn-limpar-filtros" class="btn btn-outline btn-block">Limpar filtros</button>
+  </aside>
+
+  <div class="catalogo-conteudo">
+    <div class="catalogo-toolbar">
+      <span id="contador-resultados">0 produtos</span>
+      <select id="ordenar">
+        <option value="relevancia">Relevância</option>
+        <option value="menor-preco">Menor preço</option>
+        <option value="maior-preco">Maior preço</option>
+        <option value="avaliacao">Melhor avaliados</option>
+      </select>
+    </div>
+    <div id="grid-catalogo" class="produtos-grid"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 OSSO. Projeto de portfólio.</span>
+      <a href="index.html">Voltar à home</a>
+    </div>
+  </div>
+</footer>
+
+<div id="carrinho-overlay" class="carrinho-overlay"></div>
+<aside id="carrinho-drawer" class="carrinho-drawer">
+  <div class="carrinho-header">
+    <h3>Seu carrinho</h3>
+    <button id="btn-fechar-carrinho" class="btn-fechar">×</button>
+  </div>
+  <div id="carrinho-lista" class="carrinho-lista"></div>
+  <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+  <div class="carrinho-footer">
+    <div class="carrinho-subtotal-row">
+      <span>Subtotal</span>
+      <strong id="carrinho-subtotal">R$ 0,00</strong>
+    </div>
+    <a href="#" class="btn btn-primary btn-block" onclick="alert('Checkout fora do escopo deste projeto de portfólio.'); return false;">Finalizar compra</a>
+  </div>
+</aside>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/components.js"></script>
+<script src="js/produtos.js"></script>
+</body>
+</html>

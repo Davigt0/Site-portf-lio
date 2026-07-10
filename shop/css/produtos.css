@@ -1,0 +1,63 @@
+.catalogo-header { padding: 48px 32px 8px; }
+.catalogo-header h1 { font-size: 40px; margin-top: 8px; }
+
+.catalogo-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 48px;
+  padding: 40px 32px 100px;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-self: start;
+  position: sticky;
+  top: 100px;
+}
+.filtro-grupo h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  color: var(--ink-soft);
+}
+.filtro-grupo label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.filtro-grupo input { accent-color: var(--accent); }
+
+.catalogo-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+#ordenar {
+  border: 1px solid var(--line);
+  background: var(--white);
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.grid-vazio {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 0;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 900px) {
+  .catalogo-layout { grid-template-columns: 1fr; }
+  .filtros { position: static; flex-direction: row; flex-wrap: wrap; gap: 24px; }
+}

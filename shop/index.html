@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSSO — Alfaiataria contemporânea</title>
+    <meta
+      name="description"
+      content="OSSO: peças de alfaiataria contemporânea, tecidos nobres e corte preciso."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="logo">OSSO</a>
+        <ul class="nav-links">
+          <li><a href="produtos.html">Catálogo</a></li>
+          <li><a href="produtos.html?categoria=masculino">Masculino</a></li>
+          <li><a href="produtos.html?categoria=feminino">Feminino</a></li>
+          <li><a href="produtos.html?promo=1">Promoções</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="nav-icon-btn" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg>
+          </button>
+          <button
+            id="btn-abrir-carrinho"
+            class="nav-icon-btn"
+            aria-label="Carrinho"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <path
+                d="M6 7h15l-1.5 10.5a2 2 0 0 1-2 1.5H8.5a2 2 0 0 1-2-1.5L5 4H2"
+              />
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="18" cy="21" r="1" />
+            </svg>
+            <span id="carrinho-contador" class="cart-badge">0</span>
+          </button>
+          <div class="nav-toggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner container">
+        <p class="eyebrow reveal">Coleção Inverno 26</p>
+        <h1 class="hero-title reveal">Corte preciso.<br />Tecido honesto.</h1>
+        <p class="hero-sub reveal">
+          Peças de alfaiataria pensadas para durar mais de uma estação — sem
+          repetir a mesma silhueta de sempre.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="produtos.html" class="btn btn-primary">Comprar agora</a>
+          <a href="produtos.html?novo=1" class="btn btn-outline"
+            >Ver lançamentos</a
+          >
+        </div>
+      </div>
+      <div class="hero-tag reveal">
+        <span>OSSO™</span>
+        <span>Composição no verso ↓</span>
+      </div>
+    </header>
+
+    <section class="container section-categorias">
+      <div class="tag-divider reveal">
+        <span class="tag-label">Categorias</span>
+        <span class="tag-stitch"></span>
+      </div>
+      <div class="categorias-grid">
+        <a
+          href="produtos.html?categoria=masculino"
+          class="categoria-card reveal"
+        >
+          <div class="categoria-fill categoria-masc"></div>
+          <h3>Masculino</h3>
+        </a>
+        <a
+          href="produtos.html?categoria=feminino"
+          class="categoria-card reveal"
+        >
+          <div class="categoria-fill categoria-fem"></div>
+          <h3>Feminino</h3>
+        </a>
+        <a href="produtos.html?promo=1" class="categoria-card reveal">
+          <div class="categoria-fill categoria-promo"></div>
+          <h3>Promoções</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="container section-produtos">
+      <div class="tag-divider reveal">
+        <span class="tag-label">Mais vendidos</span>
+        <span class="tag-stitch"></span>
+      </div>
+      <div id="grid-mais-vendidos" class="produtos-grid"></div>
+    </section>
+
+    <section class="container section-produtos">
+      <div class="tag-divider reveal">
+        <span class="tag-label">Lançamentos</span>
+        <span class="tag-stitch"></span>
+      </div>
+      <div id="grid-novos" class="produtos-grid"></div>
+    </section>
+
+    <section class="beneficios container reveal">
+      <div class="beneficio">
+        <h4>Troca em 30 dias</h4>
+        <p>Sem perguntas, sem burocracia.</p>
+      </div>
+      <div class="beneficio">
+        <h4>Frete grátis</h4>
+        <p>Acima de R$ 299 em todo o Brasil.</p>
+      </div>
+      <div class="beneficio">
+        <h4>Tecido rastreável</h4>
+        <p>Origem de cada matéria-prima informada.</p>
+      </div>
+      <div class="beneficio">
+        <h4>Pagamento em até 6x</h4>
+        <p>Sem juros no cartão de crédito.</p>
+      </div>
+    </section>
+
+    <section class="newsletter container reveal">
+      <h2>Fique por dentro</h2>
+      <p>
+        Lançamentos e acesso antecipado a coleções limitadas, direto no seu
+        e-mail.
+      </p>
+      <form
+        class="newsletter-form"
+        onsubmit="
+          event.preventDefault();
+          this.reset();
+          alert('Inscrição simulada — sem envio real.');
+        "
+      >
+        <input type="email" placeholder="seu@email.com" required />
+        <button type="submit" class="btn btn-primary">Inscrever</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-logo">OSSO</p>
+            <p>
+              Alfaiataria contemporânea feita com tecidos rastreáveis e corte de
+              precisão. Projeto de portfólio — sem loja real.
+            </p>
+          </div>
+          <div>
+            <h4>Institucional</h4>
+            <ul>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Trabalhe conosco</a></li>
+              <li><a href="#">Sustentabilidade</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Ajuda</h4>
+            <ul>
+              <li><a href="#">Trocas e devoluções</a></li>
+              <li><a href="#">Guia de tamanhos</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Redes sociais</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 OSSO. Projeto de portfólio.</span>
+          <span>Política de Privacidade · Termos de Uso</span>
+        </div>
+      </div>
+    </footer>
+
+    <div id="carrinho-overlay" class="carrinho-overlay"></div>
+    <aside id="carrinho-drawer" class="carrinho-drawer">
+      <div class="carrinho-header">
+        <h3>Seu carrinho</h3>
+        <button id="btn-fechar-carrinho" class="btn-fechar">×</button>
+      </div>
+      <div id="carrinho-lista" class="carrinho-lista"></div>
+      <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+      <div class="carrinho-footer">
+        <div class="carrinho-subtotal-row">
+          <span>Subtotal</span>
+          <strong id="carrinho-subtotal">R$ 0,00</strong>
+        </div>
+        <a
+          href="#"
+          class="btn btn-primary btn-block"
+          onclick="
+            alert('Checkout fora do escopo deste projeto de portfólio.');
+            return false;
+          "
+          >Finalizar compra</a
+        >
+        <p class="carrinho-nota">
+          Frete calculado apenas na simulação de checkout.
+        </p>
+      </div>
+    </aside>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
