@@ -131,7 +131,8 @@ nav.scrolled {
 
 .nav-logo,
 .nav-logo img,
-.footer-logo {
+.footer-logo,
+.footer-logo img {
   width: 42px;
   height: 42px;
   display: inline-grid;
