@@ -31,9 +31,13 @@
 html {
   scroll-behavior: smooth;
   background: var(--black);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
+  position: relative;
+  width: 100%;
   min-height: 100vh;
   background:
     radial-gradient(
@@ -107,10 +111,12 @@ nav {
   left: 50%;
   z-index: 100;
   width: min(1120px, calc(100% - 2rem));
+  max-width: calc(100vw - 2rem);
   transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
   padding: 0.75rem 0.85rem 0.75rem 1rem;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -135,6 +141,8 @@ nav.scrolled {
 .footer-logo img {
   width: 42px;
   height: 42px;
+  flex-shrink: 0;
+  overflow: hidden;
   display: inline-grid;
   place-items: center;
   border: 1px solid rgba(229, 9, 20, 0.34);
@@ -152,6 +160,11 @@ nav.scrolled {
   box-shadow:
     inset 0 0 18px rgba(255, 255, 255, 0.08),
     0 0 24px rgba(229, 9, 20, 0.14);
+}
+
+.nav-logo img,
+.footer-logo img {
+  object-fit: cover;
 }
 
 .nav-links {
@@ -209,6 +222,7 @@ nav.scrolled {
 
 .nav-menu-btn {
   display: none;
+  flex-shrink: 0;
   width: 42px;
   height: 42px;
   border: 1px solid var(--line);
@@ -332,6 +346,10 @@ h2 {
   font-weight: 800;
   letter-spacing: 0;
   line-height: 0.96;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: balance;
 }
 
 h1 {
@@ -1360,6 +1378,8 @@ footer p {
     top: calc(100% + 0.55rem);
     left: 0;
     right: 0;
+    max-width: 100%;
+    box-sizing: border-box;
     display: grid;
     gap: 0.35rem;
     padding: 0.75rem;
@@ -1448,7 +1468,8 @@ footer p {
   }
 
   h1 {
-    font-size: clamp(2.7rem, 15vw, 4rem);
+    font-size: clamp(2.4rem, 11vw, 4rem);
+    overflow-wrap: break-word;
   }
 
   .hero-actions,
