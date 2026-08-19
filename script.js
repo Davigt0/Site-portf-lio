@@ -8,6 +8,41 @@ const prefersReducedMotion = window.matchMedia(
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 // ===========================
+// TRANSIÇÃO ENTRE PÁGINAS
+// ===========================
+const pageOverlay = document.querySelector(".page-transition-overlay");
+
+if (pageOverlay) {
+  window.addEventListener("pageshow", () => {
+    requestAnimationFrame(() => {
+      pageOverlay.classList.add("is-hidden");
+    });
+  });
+
+  document.querySelectorAll('a[href]:not([href^="#"])').forEach((link) => {
+    const href = link.getAttribute("href");
+    const isExternal =
+      link.target === "_blank" ||
+      /^(https?:)?\/\//.test(href) ||
+      href.startsWith("mailto:") ||
+      href.startsWith("tel:");
+
+    if (isExternal) return;
+
+    link.addEventListener("click", (event) => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey) return;
+      event.preventDefault();
+
+      pageOverlay.classList.remove("is-hidden");
+
+      window.setTimeout(() => {
+        window.location.href = href;
+      }, prefersReducedMotion ? 0 : 480);
+    });
+  });
+}
+
+// ===========================
 // MENU MOBILE
 // ===========================
 const menuBtn = document.getElementById("menuBtn");

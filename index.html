@@ -5,36 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfólio de Davi Gonçalves, desenvolvedor front-end e UI designer."
+      content="DDev Studio — criação de sites modernos, responsivos e sob medida. Landing pages, sites institucionais e projetos com integrações personalizadas."
     />
-    <title>Davi Gonçalves | Portfólio</title>
+    <title>DDev Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="imagens/ChatGPT Image 10 de jul. de 2026, 18_30_33.png"
-    />
+    <link rel="icon" href="imagens/logo DDev studio.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="page-transition-overlay" aria-hidden="true"></div>
     <div class="noise" aria-hidden="true"></div>
     <div class="scroll-progress" aria-hidden="true"></div>
 
     <nav id="navbar" aria-label="Navegação principal">
-      <a href="#" class="nav-logo" aria-label="Voltar ao início">
-        <img
-          src="/imagens/ChatGPT Image 10 de jul. de 2026, 18_30_33.png"
-          alt="logo"
-        />
+      <a href="#inicio" class="nav-logo" aria-label="Voltar ao início">
+        <img src="imagens/logo DDev studio.png" alt="DDev Studio" />
       </a>
       <ul class="nav-links" id="navLinks">
+        <!-- <li><a href="index.html">Inicio</a></li> -->
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Skills</a></li>
+        <li><a href="#servicos">Serviços</a></li>
         <li><a href="#projetos">Projetos</a></li>
+        <li><a href="planos.html">Planos</a></li>
         <li><a href="#contato" class="nav-cta">Contato</a></li>
       </ul>
       <button
@@ -60,35 +57,36 @@
         <div class="hero-text reveal reveal-left">
           <div class="hero-eyebrow">
             <span></span>
-            Disponível para projetos digitais
+            Aberto para novos projetos
           </div>
-          <h1>Interfaces que parecem simples, mas trabalham em alto nível.</h1>
+          <h1>Sites que parecem simples, mas trabalham em alto nível.</h1>
           <p class="hero-desc">
-            Sou Davi Gonçalves, desenvolvedor front-end e UI designer. Crio
-            experiências rápidas, responsivas e visualmente marcantes para
-            marcas que querem presença digital com precisão.
+            A DDev Studio cria sites rápidos, responsivos e visualmente
+            marcantes para marcas que querem presença digital com precisão — do
+            primeiro esboço até a publicação.
           </p>
           <div class="hero-actions">
-            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="planos.html" class="btn btn-primary">Ver planos</a>
             <a
-              href="https://wa.me/5521997972347"
+              href="https://wa.me/5521995952337"
               class="btn btn-ghost"
               target="_blank"
+              rel="noopener noreferrer"
               >Começar conversa</a
             >
           </div>
-          <div class="hero-indicators" aria-label="Indicadores profissionais">
+          <div class="hero-indicators" aria-label="Indicadores">
             <div>
               <strong data-count="2">0</strong>
-              <span>Anos criando</span>
+              <span>Anos de atuação</span>
             </div>
             <div>
               <strong data-count="20">0</strong>
-              <span>Projetos</span>
+              <span>Projetos entregues</span>
             </div>
             <div>
               <strong data-count="15">0</strong>
-              <span>Clientes</span>
+              <span>Clientes atendidos</span>
             </div>
           </div>
         </div>
@@ -96,21 +94,38 @@
         <div class="hero-visual reveal reveal-right">
           <div class="portrait-shell tilt-card parallax-item" data-depth="0.08">
             <div class="portrait-glow"></div>
-            <img
-              src="/imagens/foto profissional minha.png"
-              class="hero-photo"
-            />
+            <div class="browser-mock">
+              <div class="browser-bar">
+                <span class="dot dot-r"></span>
+                <span class="dot dot-y"></span>
+                <span class="dot dot-g"></span>
+                <div class="browser-url">seunegocio.com.br</div>
+              </div>
+              <div class="browser-body">
+                <div class="mock-nav">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mock-hero">
+                  <div class="mock-line w-70"></div>
+                  <div class="mock-line w-50"></div>
+                  <div class="mock-btn"></div>
+                </div>
+                <div class="mock-grid">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
             <div class="availability-pill">
               <span></span>
-              Open to work
+              Vagas abertas
             </div>
             <div class="floating-card floating-card-top">
-              <small>Stack atual</small>
+              <small>Stack</small>
               <strong>HTML · CSS · JS · React</strong>
             </div>
             <div class="floating-card floating-card-bottom">
-              <small>Foco</small>
-              <strong>UX, performance e motion</strong>
+              <small>Entrega média</small>
+              <strong>Combinada por projeto</strong>
             </div>
           </div>
         </div>
@@ -118,19 +133,19 @@
 
       <div class="marquee-section" aria-hidden="true">
         <div class="marquee-track">
-          <span>HTML</span><i></i><span>JavaScript</span><i></i> <span>CSS</span
-          ><i></i><span>React</span><i></i> <span>UI Design</span><i></i
-          ><span>Performance</span><i></i> <span>HTML</span><i></i
-          ><span>JavaScript</span><i></i> <span>CSS</span><i></i
-          ><span>React</span><i></i> <span>UI Design</span><i></i
-          ><span>Performance</span><i></i>
+          <span>Sites institucionais</span><i></i><span>Landing pages</span
+          ><i></i> <span>UI Design</span><i></i><span>Performance</span><i></i>
+          <span>Integrações</span><i></i><span>Suporte</span><i></i>
+          <span>Sites institucionais</span><i></i><span>Landing pages</span
+          ><i></i> <span>UI Design</span><i></i><span>Performance</span><i></i>
+          <span>Integrações</span><i></i><span>Suporte</span><i></i>
         </div>
       </div>
 
-      <section class="section" id="habilidades">
+      <section class="section" id="servicos">
         <div class="section-heading reveal">
-          <p class="section-label">O que eu faço</p>
-          <h2>Skills para transformar ideia em interface real.</h2>
+          <p class="section-label">O que fazemos</p>
+          <h2>Serviços para transformar ideia em site real.</h2>
         </div>
         <div class="skills-grid">
           <article class="skill-card reveal" data-delay="0">
@@ -150,10 +165,10 @@
               <span class="skill-icon">UI</span>
               <strong>88%</strong>
             </div>
-            <h3>UI Design</h3>
+            <h3>Design de interface</h3>
             <p>
-              Interfaces elegantes, sistemas visuais consistentes, protótipos e
-              experiência orientada ao usuário.
+              Identidade visual, sistemas de design consistentes e protótipos
+              pensados na experiência do seu cliente.
             </p>
             <div class="skill-bar" data-level="88"><span></span></div>
           </article>
@@ -176,8 +191,8 @@
             </div>
             <h3>Integrações</h3>
             <p>
-              Consumo de APIs REST, autenticação, formulários inteligentes e
-              serviços externos.
+              Formulários inteligentes, WhatsApp, redes sociais e serviços
+              externos conectados ao seu site.
             </p>
             <div class="skill-bar" data-level="82"><span></span></div>
           </article>
@@ -186,10 +201,10 @@
               <span class="skill-icon">CI</span>
               <strong>78%</strong>
             </div>
-            <h3>Deploy & CI/CD</h3>
+            <h3>Deploy & Suporte</h3>
             <p>
-              Publicação com Vercel, Netlify e fluxos de entrega contínua para
-              colocar produto no ar.
+              Publicação com Vercel, Netlify e acompanhamento após a entrega
+              para ajustes e evolução do projeto.
             </p>
             <div class="skill-bar" data-level="78"><span></span></div>
           </article>
@@ -205,6 +220,55 @@
             </p>
             <div class="skill-bar" data-level="90"><span></span></div>
           </article>
+        </div>
+      </section>
+
+      <section class="section" id="processo">
+        <div class="section-heading reveal">
+          <p class="section-label">Como funciona</p>
+          <h2>Do briefing à publicação, em quatro etapas.</h2>
+        </div>
+        <div class="timeline-wrap">
+          <div class="timeline-item reveal" data-delay="0">
+            <span class="timeline-year">01</span>
+            <div class="timeline-content">
+              <h4>Briefing</h4>
+              <p>
+                Entendemos seu negócio, seu público e os objetivos do site pelo
+                WhatsApp ou e-mail.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal" data-delay="80">
+            <span class="timeline-year">02</span>
+            <div class="timeline-content">
+              <h4>Proposta</h4>
+              <p>
+                Você escolhe o plano ideal e alinhamos escopo, prazo e forma de
+                pagamento.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal" data-delay="160">
+            <span class="timeline-year">03</span>
+            <div class="timeline-content">
+              <h4>Desenvolvimento</h4>
+              <p>
+                Design e código são construídos com checkpoints de aprovação até
+                o resultado final.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal" data-delay="240">
+            <span class="timeline-year">04</span>
+            <div class="timeline-content">
+              <h4>Entrega e suporte</h4>
+              <p>
+                Site publicado, testado em todos os dispositivos e com
+                acompanhamento pós-entrega.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -225,10 +289,6 @@
               <span>PJT.</span>
             </div>
             <div class="project-info">
-              <!-- <div class="project-tags">
-              <span>Landing Page</span>
-              <span>Vercel</span>
-            </div> -->
               <h3>PJT Construções</h3>
               <p>
                 Experiência institucional para construção civil com hierarquia
@@ -238,10 +298,11 @@
             </div>
           </a>
           <a
-            href="/site imobiliária/imobiliária/index.html"
+            href="https://siteimobiliaria-psi.vercel.app"
             class="project-card tilt-card reveal"
             data-delay="360"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div class="project-thumb">
               <span
@@ -250,11 +311,6 @@
               >
             </div>
             <div class="project-info">
-              <!-- <div class="project-tags">
-          <span>HMLT</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div> -->
               <h3>Imobiliária premium</h3>
               <p>
                 Imobiliária premium, com design moderno, responsividade,
@@ -264,29 +320,28 @@
             </div>
           </a>
           <a
-            href="/shop/index.html"
+            href="https://www.igrejacasadoabba.com.br"
             class="project-card tilt-card reveal"
             target="_blank"
+            rel="noopener noreferrer"
             data-delay="240"
           >
             <div class="project-thumb">
-              <span>Shop.</span>
+              <span class="igreja-texto">Church.</span>
             </div>
             <div class="project-info">
-              <!-- <div class="project-tags">
-            <span>React</span>
-          </div> -->
-              <h3>Loja Artesanal</h3>
+              <h3>Site para igreja</h3>
               <p>
-                E-commerce simples para portfólio, com sistema de carrinho e
-                outros.
+                um site profissional, moderno e bem estruturado, com integrações
+                e diversas funções.
               </p>
               <span class="project-arrow">Ver projeto</span>
             </div>
           </a>
           <a
-            href="/Site para academia/academia_public/index.html"
+            href="https://siteacademia-nine.vercel.app"
             target="_blank"
+            rel="noopener noreferrer"
             class="project-card tilt-card reveal"
             data-delay="0"
           >
@@ -294,11 +349,6 @@
               <span>Gym.</span>
             </div>
             <div class="project-info">
-              <!-- <div class="project-tags">
-          <span>HMTL</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div> -->
               <h3>Academia premium</h3>
               <p>
                 Site institucional para academia de design chamativo com
@@ -313,31 +363,66 @@
       <section class="section about-section" id="sobre">
         <div class="about-grid">
           <div class="about-media reveal reveal-left">
-            <div class="about-photo-wrap parallax-item" data-depth="-0.05">
-              <img
-                src="imagens/ChatGPT Image 9 de jul. de 2026, 17_54_10.png"
-                alt="Davi Gonçalves em retrato profissional"
-                class="about-photo"
-              />
+            <div class="about-visual parallax-item" data-depth="-0.05">
+              <div class="about-panel-row">
+                <span class="about-panel-num">01</span>
+                <div>
+                  <h4>Design que representa a marca</h4>
+                  <p>
+                    Cada projeto começa com identidade visual pensada para o seu
+                    público, não com um modelo pronto.
+                  </p>
+                </div>
+              </div>
+              <div class="about-panel-row">
+                <span class="about-panel-num">02</span>
+                <div>
+                  <h4>Código limpo e responsivo</h4>
+                  <p>
+                    Estrutura sólida em HTML, CSS e JavaScript moderno, pronta
+                    para crescer junto com o projeto.
+                  </p>
+                </div>
+              </div>
+              <div class="about-panel-row">
+                <span class="about-panel-num">03</span>
+                <div>
+                  <h4>Comunicação direta</h4>
+                  <p>
+                    Alinhamento por WhatsApp em todas as etapas, sem
+                    intermediários ou processos burocráticos.
+                  </p>
+                </div>
+              </div>
+              <div class="about-panel-row">
+                <span class="about-panel-num">04</span>
+                <div>
+                  <h4>Prazo combinado, prazo cumprido</h4>
+                  <p>
+                    Escopo definido antes de começar, para que a entrega
+                    aconteça sem surpresas.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="about-text reveal reveal-right">
-            <p class="section-label">Quem sou eu</p>
-            <h2>Construo há 2 anos, aprendendo e refinando sempre.</h2>
+            <p class="section-label">Sobre a DDev Studio</p>
+            <h2>Construímos sites com atenção a cada detalhe.</h2>
             <p>
-              Comecei com HTML e CSS por curiosidade. Logo me apaixonei pela
-              mistura de lógica e estética que o front-end oferece: código que
-              vira algo que as pessoas tocam, leem e usam no dia a dia.
+              A DDev Studio nasceu da mistura de lógica e estética que o
+              front-end oferece: código que vira algo que as pessoas tocam, leem
+              e usam no dia a dia.
             </p>
             <p>
-              Hoje me especializo em interfaces rápidas e acessíveis, com
-              atenção especial à experiência do usuário, microinterações e
-              consistência visual.
+              Trabalhamos com interfaces rápidas e acessíveis, com atenção
+              especial à experiência do usuário, microinterações e consistência
+              visual em cada entrega.
             </p>
             <div class="about-stats">
               <div>
                 <strong data-count="2">0</strong>
-                <span>Anos de experiência</span>
+                <span>Anos de atuação</span>
               </div>
               <div>
                 <strong data-count="20">0</strong>
@@ -349,48 +434,39 @@
               </div>
             </div>
             <ul class="about-list">
-              <li>Foco em acessibilidade e clareza visual</li>
+              <li>Comunicação direta em todas as etapas do projeto</li>
               <li>Design orientado ao usuário e ao negócio</li>
               <li>Código modular, limpo e fácil de evoluir</li>
               <li>Entrega com atenção a prazo e acabamento</li>
             </ul>
           </div>
         </div>
+      </section>
 
-        <!-- <div class="timeline-wrap reveal">
-          <div class="timeline-item">
-            <span class="timeline-year">2026</span>
-            <div class="timeline-content">
-              <h4>Freelancer full-time</h4>
-              <p>Projetos para marcas, negócios locais e experiências web.</p>
+      <section class="section">
+        <div class="plans-cta reveal">
+          <p class="section-label">Planos</p>
+          <h2>Escolha o plano ideal para o seu site</h2>
+          <p>
+            Do básico ao profissional, cada plano foi pensado para um momento
+            diferente do seu negócio — todos em promoção por tempo limitado.
+          </p>
+          <div class="plans-preview">
+            <div>
+              <strong>Básico</strong>
+              <span>R$ 497</span>
+            </div>
+            <div>
+              <strong>Intermediário</strong>
+              <span>R$ 1.297</span>
+            </div>
+            <div>
+              <strong>Profissional</strong>
+              <span>R$ 2.997</span>
             </div>
           </div>
-          <div class="timeline-item">
-            <span class="timeline-year">2024</span>
-            <div class="timeline-content">
-              <h4>Dev Front-end Jr. · Agência X</h4>
-              <p>
-                Landing pages, portais institucionais e interfaces responsivas.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-year">2023</span>
-            <div class="timeline-content">
-              <h4>Primeiros projetos open source</h4>
-              <p>
-                Contribuições no GitHub e primeiros clientes via comunidade.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-year">2022</span>
-            <div class="timeline-content">
-              <h4>Início na programação</h4>
-              <p>Primeiro “Olá, Mundo!” e a descoberta do front-end.</p>
-            </div>
-          </div>
-        </div> -->
+          <a href="planos.html" class="btn btn-primary">Ver todos os planos</a>
+        </div>
       </section>
 
       <section class="contact-section" id="contato">
@@ -399,26 +475,26 @@
             <p class="section-label">Vamos conversar</p>
             <h2>Tem um projeto em mente?</h2>
             <p>
-              Estou disponível para freelas, projetos de médio e longo prazo e
-              parcerias. Me conta o que você precisa e eu retorno com uma
-              direção clara.
+              Estamos disponíveis para landing pages, sites institucionais,
+              projetos de médio e longo prazo e parcerias. Conta pra gente o que
+              você precisa e retornamos com uma direção clara.
             </p>
             <div class="contact-actions">
               <a
-                href="https://mailto:gtdavi239@gmail.com"
+                href="https://wa.me/5521995952337"
                 class="btn btn-primary"
-                target="_blank"
-              >
-                gtdavi239@gmail.com
-              </a>
-              <!-- <a
-                href="https://linkedin.com"
-                class="btn btn-outline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn
-              </a> -->
+                Chamar no WhatsApp
+              </a>
+              <a
+                href="mailto:ddevstudio001@gmail.com"
+                class="btn btn-outline"
+                target="_blank"
+              >
+                ddevstudio001@gmail.com
+              </a>
             </div>
           </div>
 
@@ -469,38 +545,146 @@
     </main>
 
     <footer>
-      <a href="#" class="footer-logo"
-        ><img
-          src="/imagens/ChatGPT Image 10 de jul. de 2026, 18_30_33.png"
-          alt=""
-      /></a>
-      <p>
-        © 2026 Davi Gonçalves. Feito com HTML, CSS, JavaScript e cuidado visual.
-      </p>
-      <ul class="footer-links">
-        <!-- <li>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-            >GitHub</a
-          >
-        </li> -->
-        <li>
-          <a
-            href="https://wa.me/5521997972347"
-            target="_blank"
-            rel="noopener noreferrer"
-            >whatsapp</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://mailto: gtdavi239@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >e-mail</a
-          >
-        </li>
-      </ul>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="footer-logo"
+            ><img src="imagens/logo DDev studio.png" alt="DDev Studio"
+          /></a>
+          <p>
+            Criação de sites modernos, responsivos e sob medida — do
+            planejamento à publicação.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/ddev_studio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram da DDev Studio"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="3"
+                  width="18"
+                  height="18"
+                  rx="5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/5521995952337"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp da DDev Studio"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.28-1.15A8.5 8.5 0 1 0 12 3.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.7 8.6c-.2.9.1 2 1.05 3.15 1 1.2 2.15 1.85 3.2 2.1.85.2 1.35-.3 1.7-.65.2-.2.15-.4-.05-.55l-1.2-.85c-.15-.1-.3-.1-.45.02l-.4.35c-.1.1-.25.1-.4 0-.5-.28-1.05-.75-1.4-1.3-.1-.15-.1-.3 0-.42l.3-.4c.1-.15.1-.3.02-.45l-.6-1.3c-.1-.22-.35-.3-.55-.15Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://wa.me/5521995952337"
+                target="_blank"
+                rel="noopener noreferrer"
+                >(21) 99595-2337</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:ddevstudio001@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ddevstudio001@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Redes sociais</h4>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://www.instagram.com/ddev_studio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >@ddev_studio</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 DDev Studio. Todos os direitos reservados.</p>
+        <p>Feito com HTML, CSS, JavaScript e cuidado visual.</p>
+      </div>
     </footer>
+
+    <a
+      href="https://wa.me/5521995952337"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.28-1.15A8.5 8.5 0 1 0 12 3.5Z"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M8.7 8.6c-.2.9.1 2 1.05 3.15 1 1.2 2.15 1.85 3.2 2.1.85.2 1.35-.3 1.7-.65.2-.2.15-.4-.05-.55l-1.2-.85c-.15-.1-.3-.1-.45.02l-.4.35c-.1.1-.25.1-.4 0-.5-.28-1.05-.75-1.4-1.3-.1-.15-.1-.3 0-.42l.3-.4c.1-.15.1-.3.02-.45l-.6-1.3c-.1-.22-.35-.3-.55-.15Z"
+          fill="currentColor"
+        />
+      </svg>
+    </a>
 
     <script src="script.js"></script>
   </body>
