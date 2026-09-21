@@ -343,9 +343,9 @@ nav.scrolled {
 h1,
 h2 {
   font-family: var(--display);
-  font-weight: 800;
-  letter-spacing: 0;
-  line-height: 0.96;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.08;
   overflow-wrap: normal;
   word-break: normal;
   hyphens: none;
@@ -353,15 +353,15 @@ h2 {
 }
 
 h1 {
-  max-width: 740px;
-  margin-bottom: 1.4rem;
-  font-size: clamp(3.15rem, 7vw, 6.8rem);
+  max-width: 620px;
+  margin-bottom: 1.3rem;
+  font-size: clamp(2.35rem, 4.2vw, 3.75rem);
 }
 
 h2 {
-  max-width: 760px;
-  margin-bottom: 2.5rem;
-  font-size: clamp(2.25rem, 5vw, 4.8rem);
+  max-width: 620px;
+  margin-bottom: 2rem;
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem);
 }
 
 .hero-desc {
@@ -1574,32 +1574,39 @@ footer p {
   color: var(--muted);
 }
 
-.plans-preview {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin-bottom: 2.2rem;
+.plans-cta-actions {
+  justify-content: center;
 }
 
-.plans-preview div {
-  padding: 1.1rem;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.04);
+.value-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0 auto 1.4rem;
 }
 
-.plans-preview strong {
-  display: block;
-  margin-bottom: 0.3rem;
-  color: var(--white);
-  font-family: var(--display);
-  font-size: 1.1rem;
+.value-preview .plan-price-old {
+  font-size: 1rem;
 }
 
-.plans-preview span {
-  color: var(--accent);
-  font-size: 0.85rem;
+.value-preview .plan-price-new {
+  justify-content: center;
+  font-size: clamp(2.4rem, 4vw, 3.1rem);
+}
+
+.value-preview-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  color: #4ade80;
+  font-size: 0.72rem;
   font-weight: 800;
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.28);
 }
 
 /* ===========================
@@ -1702,9 +1709,9 @@ footer p {
 }
 
 .page-header h1 {
-  max-width: 780px;
+  max-width: 620px;
   margin: 0 auto 1.1rem;
-  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-size: clamp(2.1rem, 3.6vw, 3.1rem);
 }
 
 .page-header p {
@@ -1721,6 +1728,33 @@ footer p {
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 1rem 0 clamp(4rem, 8vw, 6rem);
+}
+
+.plans-grid.plans-grid-single {
+  grid-template-columns: minmax(0, 1fr);
+  width: min(520px, calc(100% - 2rem));
+}
+
+.plan-highlight {
+  margin: 0 0 1.6rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(74, 222, 128, 0.28);
+  border-radius: 14px;
+  background: rgba(74, 222, 128, 0.08);
+  color: var(--soft);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.plan-highlight strong {
+  color: #4ade80;
+}
+
+.plan-fineprint {
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 .plan-card {
@@ -2190,8 +2224,12 @@ footer p {
   }
 
   h1 {
-    font-size: clamp(2.4rem, 11vw, 4rem);
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
     overflow-wrap: break-word;
+  }
+
+  h2 {
+    font-size: clamp(1.55rem, 6.5vw, 2.1rem);
   }
 
   .hero-actions,
@@ -2210,6 +2248,10 @@ footer p {
 
   .plans-grid {
     width: min(100% - 1rem, 1180px);
+  }
+
+  .plans-grid.plans-grid-single {
+    width: min(100% - 1rem, 520px);
   }
 
   .plan-card {
